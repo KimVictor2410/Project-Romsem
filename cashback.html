@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  
+  <!-- navbar -->
+  <nav class="navbar container-fluid">
+    <div class="navbar-navigation d-md-none d-flex align-items-center">
+      <a href="#!" class="navbar-navigation__logo d-md-none d-flex">
+        <img src="images/logo.png" alt="">
+      </a>
+      <a href="#menu" data-bs-toggle="offcanvas" class="navbar-navigation__btn d-md-flex d-none flex-column justify-content-center">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </div>
+  <!-- cashback-pagination --> 
+    <div class="cashback-pagination">
+      <div class="col-6 d-md-flex d-none justify-content-start">
+        <a href="index.html" class="f300 icon-arr-left d-flex align-items-center"><span>Продолжить выбор</span></a>
+      </div>
+    </div>
+  <!-- cashback-pagination end -->
+    <div class="cashback-contacts d-flex flex-md-column flex-row align-items-center justify-content-around">
+    <div class="cashback-contacts__phones d-flex flex-column align-items-center">
+      <h3>Наш телефон</h3>
+      <a href="#!">+996 705 188 955</a>
+      <a href="#!">+996 555 188 955</a>
+    </div>
+    <p class="cashback-contacts__time f300 icon-clock d-flex flex-md-row flex-column align-items-center">
+      <span>работаем</span>
+      <span>с 10:00 до 00:00</span>
+    </p>
+    </div>
+    <div class="navbar-info d-md-flex d-none justify-content-between align-items-center flex-grow-1">
+      <div class="navbar__info--location d-md-none d-flex flex-column">
+        <p>Город:</p>
+        <h3>Бишкек</h3>
+      </div>
+      <div class="navbar__info--list d-md-none d-flex align-items-center">
+        <a href="reviews.html">Отзывы</a>
+        <a href="#!">Доставка и оплата</a>
+      </div>
+    </div>
+    <div class="navbar-icons d-md-none d-flex align-items-center">
+      <a href="#cart" data-bs-toggle="offcanvas" class="f300 icon-cart d-md-flex d-none"></a>
+      <a href="#!" class="f300 icon-search"></a>
+    </div>
+  </nav>
+  <!-- navbar end -->
+  
+  <!-- cashback-card -->
+  <div class="cashback-card">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 d-flex justify-content-md-start justify-content-center">
+          <span>Ваши данные</span>
+        </div>
+      </div>
+      <div class="cashback-card__field d-flex flex-lg-row flex-column">
+        <div class="cashback-card__field--first_half w-100 h-100">
+          <div class="cashback-card__user w-100">
+            <form action="">
+              <input type="text" class="cashback-card__field--tel" placeholder="Телефон">
+              <input type="text" class="cashback-card__field--name" placeholder="Имя">
+            </form>
+          </div>
+          <div class="tabs d-flex flex-row">
+            <div class="nav cashback-card__links">
+              <a href="#link1" data-bs-toggle="tab" class="f300 icon-wallet active"><p>Наличными</p></a>
+              <a href="#link2" data-bs-toggle="tab" class="f300 icon-card"><p>Картой</p></a>
+            </div>
+          </div>
+          <div class="cashback-card__payback">
+            <a href="#!" class="f300 icon-arr-left d-flex align-items-center"><p>Подготовить сдачу с</p></a>
+            <input type="text" class="cashback-card__payback--summary" placeholder="Сумма">
+          </div>
+          <div class="cashback-card__comment">
+            <div class="tabs d-flex flex-column">
+              <div class="nav">
+                <input type="text" class="cashback-card__comment--data" placeholder="Комменатрий к заказу">
+              </div>
+            </div>
+          </div>
+          <div class="cashback-card__price">
+            <div class="cashback-card__price--first">
+              <p>Палочки + соусник обычные</p>
+            </div>
+            <div class="cashback-card__price--second">
+              <p class="cashback-symbol">-</p>
+              <p class="cashback-amount">10</p>
+              <p class="cashback-symbol">+</p>
+            </div>
+          </div>
+          <div class="cashback-card__price">
+            <div class="cashback-card__price--first">
+              <p>Палочки + соусник обычные</p>
+            </div>
+            <div class="cashback-card__price--second">
+              <p class="cashback-symbol">-</p>
+              <p class="cashback-amount">10</p>
+              <p class="cashback-symbol">+</p>
+            </div>
+          </div>
+          <div class="cashback-card__promo">
+            <input type="text" class="cashback-card__promo--data" placeholder="Введите промокод">
+          </div>
+        </div>
+        <div class="cashback-card__field--second__half w-100 h-100">
+          <div class="address-card">
+            <div class="tabs d-flex flex-column">
+              <div class="nav transport-card__links">
+                <a href="#link1" data-bs-toggle="tab" class="active"><p>Курьером</p></a>
+                <a href="#link2" data-bs-toggle="tab"><p>Самовывоз</p></a>
+              </div>
+            </div>
+          </div>
+          <div class="address-card--location">
+            <input type="text" class="address-card--street" placeholder="Улица">
+            <input type="text" class="address-card--home" placeholder="Дом">
+          </div>
+          <div class="address-card--recon">
+            <input type="text" class="address-card--recon-data" placeholder="Кв">
+            <input type="text" class="address-card--recon-data--fail" placeholder="Подъезд">
+            <input type="text" class="address-card--recon-data--fail" placeholder="Этаж">
+            <input type="text" class="address-card--recon-data--fail" placeholder="Код">
+          </div>
+          <div class="nav time-card__links">
+            <a href="#link1" data-bs-toggle="tab" class="active"><p>На сейчас</p></a>
+            <a href="#link2" data-bs-toggle="tab"><p>На время</p></a>
+          </div>
+          <div class="address-card--mail">
+            <input type="email" class="address-card__email d-md-flex d-none" placeholder="E-mail(необязательно)">
+          </div>
+        </div>
+      </div>
+      <div class="cashback-card__field--btn d-md-flex d-none">
+        <a href="#!">Оформить заказ</a>
+      </div>
+      <div class="cashback-card__field--deal d-md-flex d-none">
+        <p>Нажимая на кнопку Оформить заказ, Вы подтверждаете свое согласие на обработку персональных данных в соответствии с <a href="#!">Публичной оффертой</a></p>
+      </div>
+    </div>
+  </div>
+  <!-- cashback-card end -->
+  
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

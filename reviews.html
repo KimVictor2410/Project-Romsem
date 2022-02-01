@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  
+  <!-- navbar -->
+  <nav class="navbar container-fluid">
+    <div class="navbar-navigation d-flex align-items-center">
+      <a href="#!" class="navbar-navigation__logo d-md-none d-flex">
+        <img src="images/logo.png" alt="">
+      </a>
+      <a href="#menu" data-bs-toggle="offcanvas" class="navbar-navigation__btn d-md-flex d-none flex-column justify-content-center">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </div>
+    <div class="navbar-contacts d-flex flex-md-column flex-row align-items-center justify-content-around">
+      <div class="navbar-contacts__phones d-flex flex-column align-items-center">
+        <h3>Наш телефон</h3>
+        <a href="#!">+996 705 188 955</a>
+        <a href="#!">+996 555 188 955</a>
+      </div>
+      <p class="navbar-contacts__time f300 icon-clock d-flex flex-md-row flex-column align-items-center">
+        <span>работаем</span>
+        <span>с 10:00 до 00:00</span>
+      </p>
+    </div>
+    <div class="navbar-info d-md-flex d-none justify-content-between align-items-center flex-grow-1">
+      <div class="navbar__info--location d-flex flex-column">
+        <p>Город:</p>
+        <h3>Бишкек</h3>
+      </div>
+      <div class="navbar__info--list d-flex align-items-center">
+        <a href="reviews.html">Отзывы</a>
+        <a href="cashback.html">Доставка и оплата</a>
+      </div>
+    </div>
+    <div class="navbar-icons d-flex align-items-center">
+      <a href="#cart" data-bs-toggle="offcanvas" class="f300 icon-cart d-md-flex d-none"></a>
+      <a href="#!" class="f300 icon-search"></a>
+    </div>
+  </nav>
+  <nav class="navbar-bottom fixed-bottom d-md-none d-flex justify-content-center align-items-center">
+    <a href="#menu" data-bs-toggle="offcanvas" class="navbar-bottom__link d-flex flex-column align-items-center">
+      <img src="images/icon-menu-bottom/icon1.svg" alt="">
+      <span>Меню</span>
+    </a>
+    <a href="#cart" data-bs-toggle="offcanvas" class="navbar-bottom__link d-flex flex-column align-items-center">
+      <img src="images/icon-menu-bottom/icon2.svg" alt="">
+      <span>Корзина</span>
+    </a>
+    <a href="#!" class="navbar-bottom__link d-flex flex-column align-items-center">
+      <img src="images/icon-menu-bottom/icon3.svg" alt="">
+      <span>Отзывы</span>
+    </a>
+  </nav>
+  <!-- canvas left -->
+  <div class="offcanvas offcanvas-start menu" id="menu">
+    <div class="offcanvas-header d-flex flex-column align-items-center">
+      <button type="button" class="btn-close align-self-end" data-bs-dismiss="offcanvas"></button>
+      <a href="index.html" class="menu-logo d-flex flex-column align-items-center">
+        <img src="images/logo.png" alt="">
+        <span>romsem</span>
+      </a>
+    </div>
+    <div class="offcanvas-body d-flex justify-content-center">
+      <ul class="menu-list navbar-nav">
+        <li><a class="" href="#!"><img src="images/icon-menu/item1.svg" alt=""><span>Пицца</span></a></li>
+        <li><a class="" href="goods.html"><img src="images/icon-menu/item2.svg" alt=""><span>Сеты</span></a></li>
+        <li><a class="" href="#!"><img src="images/icon-menu/item3.svg" alt=""><span>WOK</span></a></li>
+        <li><a class="" href="#!"><img src="images/icon-menu/item4.svg" alt=""><span>Роллы</span></a></li>
+        <li><a class="" href="#!"><img src="images/icon-menu/item5.svg" alt=""><span>Суши</span></a></li>
+        <li><a class="soon" href="#!"><img src="images/icon-menu/item6.svg" alt=""><span>Салаты</span></a></li>
+        <li><a class="soon" href="#!"><img src="images/icon-menu/item7.svg" alt=""><span>Супы</span></a></li>
+        <li><a class="" href="#!"><img src="images/icon-menu/item8.svg" alt=""><span>Корн доги</span></a></li>
+        <li><a class="" href="#!"><img src="images/icon-menu/item9.svg" alt=""><span>Напитки</span></a></li>
+        <li><a class="" href="#!"><img src="images/icon-menu/item10.svg" alt=""><span>Акции</span></a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- canvas left end -->
+   <!-- canvas right -->
+   <div class="offcanvas offcanvas-end" id="cart">
+    <div class="offcanvas-header">
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="cart-products d-flex flex-column align-items-center">
+        <h3 class="cart-products__title">Ваша корзина пуста.</h3>
+        <a href="#!" class="cart-products__add">Добавьте же скорее что-нибудь!</a>
+        <p class="cart-products__text">Бесплатная доставка от 800 СОМ</p>
+      </div>
+      <div class="cart-location d-flex flex-column align-items-center">
+        <div class="cart-location__map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.616764098753!2d69.23891881572446!3d41.27367951099875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8a89cfac6c2f%3A0xe4fa5b1f864e9ee8!2z0K_Qv9C-0L3QsNC80LDQvNCwINCo0L7RgtCw!5e0!3m2!1sru!2s!4v1640182317664!5m2!1sru!2s" width="100%" height="140" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+        <span class="f300 icon-marker"></span>
+        <h3 class="cart-location__title">Укажите адрес</h3>
+        <a href="#!" class="cart-location__time">И узнайте время доставки</a>
+      </div>
+    </div>
+  </div>
+  <!-- canvas right end -->
+  <!-- navbar end -->
+  
+  <!-- reviews -->
+  <div class="reviews">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 d-flex justify-content-md-start justify-content-center">
+          <span class="d-flex align-items-center">Отзывы</span>
+        </div>
+        <div class="col-6 d-flex justify-content-end">
+          <a href="#!" class="d-md-flex d-none flex-row-reverse align-items-center">+ Добавить отзыв</a>
+        </div>
+        <div class="reviews-content">
+          <div class="reviews-card">
+            <div class="reviews-card--header">
+              <h3>Розалия</h3>
+              <p>02.24.21</p>
+            </div>
+            <span>Ваша доставка и ваши блюда лучшие в Харькове!) всегда очень вкусно, вовремя, всегда вежливые курьеры и девушки на телефоне</span>
+          </div>
+          <div class="reviews-card">
+            <div class="reviews-card--header">
+              <h3>Елена</h3>
+              <p>02.23.21</p>
+            </div>
+            <span>Ооочень вкусно!!!!!</span>
+          </div>
+          <div class="reviews-card">
+            <div class="reviews-card--header">
+              <h3>Сергей Гаврилюк</h3>
+              <p>02.23.21</p>
+            </div>
+            <span>Заказываем у Вас больше 2 -ух лет, были разные ситуации, но сервис стал лучше, суши вкуснее. За доставку сегодня на время, огромное спасибо, точь-в-точь в минута в минуту. Успехов Вам и приятных бонусов нам )</span>
+          </div>
+          <div class="reviews-card--bottom">
+            <div class="col-md-6 d-flex justify-content-md-start justify-content-center">
+              <a href="#!" class="d-flex d-md-none flex-row-reverse align-items-center">+ Добавить отзыв</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- reviews end -->
+  
+  <!-- footer -->
+  <footer class="footer container">
+    <div class="row">
+      <div class="col-md-4 footer-box d-md-flex d-none">
+        <ul class="footer-box__list navbar-nav">
+          <li><a href="#!">О компании</a></li>
+          <li><a href="#!">Доставка и оплата</a></li>
+          <li><a href="#!">Лента материалов</a></li>
+          <li><a href="#!">Политика возврата</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 footer-box">
+        <div class="footer-box__text">
+          <h3 class="d-md-flex d-none">Введите номер</h3>
+          <span class="footer-box__text--tel d-md-flex d-none">+996 (__) ___ __ __</span>
+          <p class="footer-box__text--p text-md-start text-center">Выберите удобный мессенджер для общения</p>
+          <ul class="footer-box__text--social navbar-nav flex-row justify-content-between">
+            <li><a href="#!" class="f400 icon-whatsapp"></a></li>
+            <li><a href="#!" class="f400 icon-telegram"></a></li>
+            <li><a href="#!" class="f400 icon-instagram"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4 footer-box d-flex flex-column align-items-md-start align-items-center">
+        <a href="#!" class="footer-box__phone">Тел:+996 705 188 955 </a>
+        <a href="#!" class="footer-box__phone">Тел:+996 555 188 955 </a>
+        <p class="footer-box__address">Адрес:Бакаева 126</p>
+      </div>
+    </div>
+  </footer>
+  <!-- footer end -->
+  
+  
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
